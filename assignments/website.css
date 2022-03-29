@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    background-color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  }
+  li{
+      list-style: none;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+  }
+  p{
+      color: rgb(218, 218,218);
+  }
+  
+  /* nav */
+  .nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  
+  
+  }
+  
+  .nav #nav-h2{
+      color: rgb(231, 231,231);
+      font-family: 'Times New Roman', 'Times',serif;
+  }
+  
+  .nav .nav-ul{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .nav .nav-ul li{
+      margin: 1rem;
+  }
+  
+  .nav .nav-ul li a{
+      color: rgb(204, 204,204);
+  }
+  
+  .nav .nav-ul li a:hover{
+      color:white;
+  }
+  
+  .nav-btn{
+      width: 9rem;
+      height: 2.8rem;
+      background-color: rgb(241, 241,82);
+      border: none;
+      border: 4px;
+  }
+  /* main */
+  
+  main{
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      color: white;
+  }
+  
+  .common-margin{
+      margin-right:7rem ;
+      margin-left:7rem ;
+      padding-top:2rem ;
+      padding-bottom:2rem ;
+  }
+  
+  .main-text{
+      width: 50%
+  }
+  #main-text-h1{
+      font-size: 3rem;
+      margin: 0;
+  }
+  #main-text-p{
+      font-size: 1.1rem;
+      width:85%
+  }
+  main .icons{
+    list-style-image:;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .image{
+    display: flex;
+    justify-content: space-around;
+  }
+  .link{
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    font-style:normal; font-size: 20px; 
+    color: rgb(160, 14, 14);
+  }
+  .para{
+    display: flex;
+    justify-content:space-around;
+    color:gainsboro;
+  }
+  .main-text3{
+    background-color: rgb(48,48,48);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  }
+  .main-text3-div1{
+    padding-left: 6.8rem;
+  }
+  .main-text3-div2{
+    padding: 2rem;
+    width: 41vw;
+  }
+  .main-text3-h1{
+    font-size: 2rem;
+    color: rgb(236,236,236);
+  }
+  
+  .main-text4{
+    width: 40%;
+    color:white;
+  }
+  .footer{
+    width: 100%;
+    background-color: rgb(48,48,48);
+    display: flex;
+    justify-content: center;
+  }
+  .footer-sub{
+    width: 85.6%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
