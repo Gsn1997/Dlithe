@@ -1,0 +1,16 @@
+<div style ="display: flex;">
+  <div  *ngFor="let list of li">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <!-- <mat-card-title>Pastries</mat-card-title> -->
+          <mat-card-title>Pastries:{{list.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="list.path" alt="">
+        <mat-card-actions>
+          <button mat-button (click)="OnClickBtn(list)">GetDetails</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
+</div>
+
