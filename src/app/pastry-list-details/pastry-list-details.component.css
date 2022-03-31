@@ -1,0 +1,10 @@
+.card_details{
+    display: flex;
+    align-content: flex-start;
+}
+
+*{
+    background-color: rgb(114, 253, 8);
+  
+  }
+   

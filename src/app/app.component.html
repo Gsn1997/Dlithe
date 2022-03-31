@@ -1,0 +1,6 @@
+<div style="text-align:center">
+    <h2>Welcome to {{title}}</h2>
+</div>
+<app-pastry-list (passDataToApp)="getDetails($event)"></app-pastry-list>
+
+<app-pastry-list-details [selected_pastry]="sel_pastry"></app-pastry-list-details>
