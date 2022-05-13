@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task9-objects</title>
+  </head>
+  <body>
+    <script>
+      
+      let pageInfo = {
+        width: 500,
+        height: 800,
+        title: "My page",
+      };
+
+      for (let info in pageInfo) {
+        //console.log(pageInfo[info]);
+        if (typeof pageInfo[info] == "number") {
+          // pageInfo[info]*=2;
+          pageInfo[info] = pageInfo[info] * 2;
+        }
+      }
+      console.log(pageInfo);
+     // 
+    </script>
+  </body>
+</html>
