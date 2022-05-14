@@ -1,0 +1,29 @@
+/* .navlinks
+{
+display: flex;
+
+justify-content: space-around;
+text-decoration: none;
+text-shadow: 5px;
+
+    background-color: aquamarine; */
+/* background-image: url(../../assets/1.jpg);
+    background-position:center;
+    background-size: cover; */
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    /* padding: 5px; */
+    background-color: bisque;
+    /* background-image: url(../../assets/1.jpg); */
+}
+
+.back {
+    background-image: url(../../assets/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
