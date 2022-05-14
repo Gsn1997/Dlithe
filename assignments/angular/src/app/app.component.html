@@ -1,0 +1,56 @@
+<!--string interpolation-->
+<h1>{{title | uppercase}}</h1>
+
+<!--attribute binding-->
+<div>Mail us at</div>
+<input type="text" [class]="email" value="ktk@gmail.com">
+<input type="text" disabled class="{{email}}" value="ktkinfobank@gmail.com">
+<input type="text" disabled class="{{email}}" value="ktk@gmail.com">
+
+<!--style binding-->
+<!-- <h2 [style.color]="'blue'">Tax Benefits</h2>
+<h2 [style.color]="stylebind">Services</h2> -->
+
+<!--event binding-->
+<button (click)="onSubClick()">Subscribe</button>
+<button (click)="onUnSubClick($event)">Unsubscribe</button>
+
+<!--two way binding-->
+<div>
+  <label for="name">Enter your name </label>
+  <input id="name" [(ngModel)]="fullname" placeholder="name">
+</div>
+<h2>{{fullname}}  
+  <hr>
+  <br>  TRANSACTION  Details</h2>
+
+<!--ngfor-->
+<div *ngFor="let payee of addpayee; index as i">
+<h3> {{payee}} {{amount}}</h3>
+</div>
+
+<!--ngif-->
+<h2 *ngIf="getnotification">Notification</h2>
+
+<!--ngswitch-->
+<div [ngSwitch]="color">
+  <button *ngSwitchCase="'red'" style="color: red;">Fixed Deposit</button>
+  <button *ngSwitchCase="'blue'" style="color: blue;">Recuring Deposit</button>
+  <button *ngSwitchCase="'green'" style="color: green;">Time Deposit</button>
+</div>
+
+
+
+
+
+
+<nav>
+ <button> <a routerLink="/personalbank" routerLinkActive="active">Personal Banking</a></button>
+ <button><a routerLink="/mobilebank" routerLinkActive="active">Mobile Banking</a></button> 
+</nav>
+<app-personalbanking (childEvent)="message=$event" [parentData]="customername"></app-personalbanking>
+<h1>{{customername}} <hr>Welcome to your Account</h1>
+
+<router-outlet></router-outlet>
+
+<router-outlet></router-outlet>

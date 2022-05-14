@@ -1,0 +1,6 @@
+<h2> your account details {{parentData}}</h2>
+<button (click)="onLogin()">Login</button>
+<h2>Account details</h2>
+<ul *ngFor="let detail of details">
+<li>{{detail.accountnumber}}-{{detail.accountinterestrate}}-{{detail.accounttype}}</li>
+</ul>
